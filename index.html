@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas Romer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 600;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1a202c;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .two-paths {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .path {
+            background: #f7fafc;
+            padding: 35px 30px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .path:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .path-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .path-slogan {
+            font-size: 1.35rem;
+            color: #1a202c;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .path-subtitle {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .path-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .path-links a {
+            padding: 12px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .path-links a.primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .path-links a.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .path-links a.secondary {
+            background: #4a5568;
+            box-shadow: 0 4px 15px rgba(74, 85, 104, 0.3);
+        }
+        
+        .path-links a.secondary:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 40px 25px;
+            }
+            
+            .two-paths {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .path {
+                padding: 30px 25px;
+            }
+            
+            .path-slogan {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-image">JR</div>
+            <div class="badge">PhD | CTO & CMO</div>
+            <h1>Jonas Romer</h1>
+        </div>
+        
+        <div class="two-paths">
+            <div class="path">
+                <div class="path-title">Entrepreneurship & Growth</div>
+                <div class="path-slogan">Building and scaling data-driven brands.</div>
+                <div class="path-subtitle">Co-Founder & CMO/CTO at ofinto</div>
+                <div class="path-links">
+                    <a href="https://www.linkedin.com/in/jonasromer" target="_blank" class="primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.ofinto.ch" target="_blank" class="secondary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        ofinto
+                    </a>
+                </div>
+            </div>
+            
+            <div class="path">
+                <div class="path-title">Research & Technology</div>
+                <div class="path-slogan">Applying quantitative methods to complex systems.</div>
+                <div class="path-subtitle">PhD, University of St.Gallen. Research published in the Journal of Financial Economics.</div>
+                <div class="path-links">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0304405X24001946" target="_blank" class="primary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                        </svg>
+                        View Publication
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=k4DvqtQAAAAJ" target="_blank" class="secondary">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/>
+                        </svg>
+                        Google Scholar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
