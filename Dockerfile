@@ -1,10 +1,11 @@
 FROM nginx:alpine
 
-# Copy the HTML file to nginx's default serving directory
-COPY index.html /usr/share/nginx/html/index.html
+# Copy all files from current directory to nginx html directory
+COPY . /usr/share/nginx/html/
 
-# Set proper permissions
-RUN chmod 644 /usr/share/nginx/html/index.html
+# Set proper permissions for all files
+RUN chmod -R 644 /usr/share/nginx/html/* \
+    && chmod 755 /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
