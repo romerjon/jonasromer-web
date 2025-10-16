@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas Romer</title>
+    <meta name="description" content="Jonas Romer - PhD, Co-Founder & CMO/CTO at ofinto. Building data-driven brands and applying quantitative methods to complex systems.">
+    <meta name="author" content="Jonas Romer">
+    <meta name="keywords" content="Jonas Romer, ofinto, PhD, data-driven brands, quantitative methods, University of St.Gallen">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jonasromer.ch/">
+    <meta property="og:title" content="Jonas Romer - PhD, Co-Founder & CMO/CTO at ofinto">
+    <meta property="og:description" content="Building data-driven brands and applying quantitative methods to complex systems.">
+    <meta property="og:image" content="https://jonasromer.ch/profile.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonas Romer - PhD, Co-Founder & CMO/CTO at ofinto">
+    <meta name="twitter:description" content="Building data-driven brands and applying quantitative methods to complex systems.">
+    <meta name="twitter:image" content="https://jonasromer.ch/profile.jpg">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="profile.jpg">
+    
+    <title>Jonas Romer - PhD, Co-Founder & CMO/CTO at ofinto</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -44,14 +66,9 @@
             height: 120px;
             border-radius: 50%;
             margin: 0 auto 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            font-weight: 600;
-            color: white;
+            object-fit: cover;
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            border: 4px solid white;
         }
         
         h1 {
@@ -77,6 +94,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-top: 40px;
+            align-items: start;
         }
         
         .path {
@@ -85,6 +103,9 @@
             border-radius: 15px;
             border: 2px solid transparent;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .path:hover {
@@ -115,6 +136,7 @@
             color: #4a5568;
             margin-bottom: 25px;
             line-height: 1.6;
+            flex-grow: 1;
         }
         
         .path-links {
@@ -185,7 +207,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="profile-image">JR</div>
+            <img src="profile.jpg" alt="Jonas Romer" class="profile-image">
             <div class="badge">PhD | CTO & CMO</div>
             <h1>Jonas Romer</h1>
         </div>
